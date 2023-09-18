@@ -1,0 +1,5 @@
+Revision del sito web:
+Buen manejos de los estilos y estructura
+Faltan las otras paginas de enlacen 
+En este proyecto se puede manejar un poco el contorno de los
+colores de las tipografias
