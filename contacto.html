@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styleRedes.css">
     <link rel="stylesheet" href="style.css"> <!-- Enlaza tu hoja de estilo CSS si es necesario -->
 </head>
+
 <body>
 
     <header class="header">
@@ -13,8 +18,8 @@
         <div class="menu container">
             <a href="#" class="logo">
                 <img src="images/logo.jpg" alt="Logo de la empresa">
-            </a>       
-            <input type="checkbox" id="menu"/>     
+            </a>
+            <input type="checkbox" id="menu" />
             <label for="menu">
                 <img src="images/menu.png" class="menu-icon" alt="menu">
             </label>
@@ -28,17 +33,46 @@
             </nav>
         </div>
 
+        <section class="contact container">
+            <div class="contact-content">
+                <h3>Contacto</h3>
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+
     </header>
 
-    <h1>Contacto</h1>
-
-    <p>¡Contáctanos para obtener más información o realizar consultas! Puedes utilizar el siguiente formulario o nuestros datos de contacto.</p>
-
-    <!-- Agrega un formulario de contacto o información de contacto si es necesario -->
 
     <footer>
-        <!-- Puedes incluir aquí un pie de página común para todas las páginas si lo deseas -->
+        <div class="footer-container">
+            <p>Síguenos en nuestras redes sociales:</p>
+                    
+            <section class="buttons">
+                <a href="https://www.facebook.com/jhon.laurens" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/jhontalaurens" class="fa fa-twitter"></a>
+                <a href="https://www.youtube.com/channel/UCuMvx7UhL2YFa-JHvZTMNFw" class="fa fa-youtube"></a>
+            </section>
+        </div>
     </footer>
 
+
+
 </body>
+
 </html>

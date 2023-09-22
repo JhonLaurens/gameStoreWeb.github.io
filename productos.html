@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos</title>
     <link rel="stylesheet" href="style.css"> <!-- Enlaza tu hoja de estilo CSS si es necesario -->
 </head>
+
 <body>
 
     <header class="header">
@@ -13,8 +15,8 @@
         <div class="menu container">
             <a href="#" class="logo">
                 <img src="images/logo.jpg" alt="Logo de la empresa">
-            </a>       
-            <input type="checkbox" id="menu"/>     
+            </a>
+            <input type="checkbox" id="menu" />
             <label for="menu">
                 <img src="images/menu.png" class="menu-icon" alt="menu">
             </label>
@@ -28,17 +30,186 @@
             </nav>
         </div>
 
+        
+        <div class="header-content container">
+            <div class="header-txt">
+                <h1>Compra tu <span>juego</span><br> favorito aquí</h1>
+                <p>
+                    ¡Atención, jugadores apasionados! No pierdas la oportunidad de disfrutar de descuentos y
+                    promociones exclusivas en nuestros juegos en línea. ¡Aprovecha los precios especiales y
+                    adquiere tu juego favorito a un precio increíblemente bajo! No te quedes fuera de la
+                    diversión, ¡compra ahora y ahorra mientras te sumerges en emocionantes mundos virtuales!
+                </p>
+                <div class="butons">
+                    <a href="#" class="btn-1">Información</a>
+                    <a href="#" class="btn-1">Juegos</a>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <h1>Nuestros Productos</h1>
+    <main class="product container">
 
-    <p>En esta página, puedes mostrar tus productos, sus descripciones, precios y más detalles.</p>
+        <h2>Todos los juegos</h2>
 
-    <!-- Agrega más contenido sobre tus productos si es necesario -->
+        <div class="product-content">
+            <div class="product-1">
+                <img src="images/l1.jpg" alt="Halo Infinite">
+                <div class="product-txt">
+                    <h3>Halo Infinite</h3>
+                    <div class="price">
+                        <p>COP $259,900 </p>
+                        <a href="#" class="btn-2">Comprar</a>
+                    </div>
+                </div>
+            </div>
 
-    <footer>
-        <!-- Puedes incluir aquí un pie de página común para todas las páginas si lo deseas -->
-    </footer>
+            <div class="product-1">
+                <img src="images/l2.jpg" alt="Fortnite">
+                <div class="product-txt">
+                    <h3>Fortnite</h3>
+                    <div class="price">
+                        <p>COP $68,950</p>
+                        <a href="#" class="btn-2">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-1">
+                <img src="images/l3.jpg" alt="GTA V">
+                <div class="product-txt">
+                    <h3>GTA V</h3>
+                    <div class="price">
+                        <p>COP $127,900</p>
+                        <a href="#" class="btn-2">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-1">
+                <img src="images/l4.jpg" alt="Persona 5 Royal">
+                <div class="product-txt">
+                    <h3>Persona 5 Royal</h3>
+                    <div class="price">
+                        <p>COP $90,000</p>
+                        <a href="#" class="btn-2">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-1">
+                <img src="images/l5.jpg" alt="Skins de Personajes Fortnite">
+                <div class="product-txt">
+                    <h3>Skins de Personajes Fortnite</h3>
+                    <div class="price">
+                        <p>COP $15,000</p>
+                        <a href="#" class="btn-2">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-1">
+                <img src="images/l6.jpg" alt="Gears of War">
+                <div class="product-txt">
+                    <h3>Gears of War</h3>
+                    <div class="price">
+                        <p>COP $70,000</p>
+                        <a href="#" class="btn-2">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-1">
+                <img src="images/l7.jpg" alt="Crash Team Racing Nitro-Fueled">
+                <div class="product-txt">
+                    <h3>Crash Team Racing Nitro-Fueled</h3>
+                    <div class="price">
+                        <p>COP $100,000</p>
+                        <a href="#" class="btn-2">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-1">
+                <img src="images/l8.jpg" alt="GTA Online">
+                <div class="product-txt">
+                    <h3>GTA Online</h3>
+                    <div class="price">
+                        <p>COP $90,000</p>
+                        <a href="#" class="btn-2">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-1">
+                <img src="images/l9.jpg" alt="Battlefield V">
+                <div class="product-txt">
+                    <h3>Battlefield V</h3>
+                    <div class="price">
+                        <p>COP $120,000</p>
+                        <a href="#" class="btn-2">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="cart container">
+        <h2>Carrito de Compras</h2>
+        <ul id="cart-items">
+            <!-- Aquí se mostrarán los productos seleccionados -->
+        </ul>
+        <p>Total: <span id="cart-total">$0</span></p>
+        <button id="checkout-btn" class="btn-2">Pagar</button>
+    </section>
+
+    <script>
+        // Variables para el carrito y el total
+        const cart = [];
+        let total = 0;
+    
+        // Función para agregar un producto al carrito
+        function addToCart(productName, productPrice) {
+            cart.push({ name: productName, price: productPrice });
+            total += productPrice;
+            updateCartUI();
+        }
+    
+        // Función para actualizar la interfaz de usuario del carrito
+        function updateCartUI() {
+            const cartItemsElement = document.getElementById("cart-items");
+            const cartTotalElement = document.getElementById("cart-total");
+            cartItemsElement.innerHTML = "";
+            
+            cart.forEach(item => {
+                const li = document.createElement("li");
+                li.textContent = `${item.name} - COP $${item.price}`;
+                cartItemsElement.appendChild(li);
+            });
+    
+            cartTotalElement.textContent = `$${total}`;
+        }
+    
+        // Manejo de clic en los botones de compra
+        const buyButtons = document.querySelectorAll(".btn-2");
+        buyButtons.forEach(button => {
+            button.addEventListener("click", (event) => {
+                const productElement = event.target.closest(".product-1");
+                const productName = productElement.querySelector("h3").textContent;
+                const productPrice = parseFloat(productElement.querySelector(".price p").textContent.replace("COP $", ""));
+                addToCart(productName, productPrice);
+            });
+        });
+    
+        
+        const checkoutBtn = document.getElementById("checkout-btn");
+        checkoutBtn.addEventListener("click", () => {
+            
+            alert(`Total a pagar: COP $${total}. Redireccionando a la pasarela de pago...`);
+        });
+    </script>
+    
 
 </body>
+
 </html>
