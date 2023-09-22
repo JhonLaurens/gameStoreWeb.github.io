@@ -1,0 +1,5 @@
+.form-vertical {
+    display: flex;
+    flex-direction: column;
+  }
+  

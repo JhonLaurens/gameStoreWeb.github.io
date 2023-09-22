@@ -33,36 +33,62 @@
             </nav>
         </div>
 
+
+
+        <!-- formulario -->
         <section class="contact container">
-            <div class="contact-content">
-                <h3>Contacto</h3>
-                <form>
-                    <div class="mb-3">
-                        <label for="nombre" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Correo Electrónico</label>
-                        <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="mensaje" class="form-label">Mensaje</label>
-                        <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje"
-                            required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                </form>
-            </div>
+
+            
+            <form action="tu-archivo-de-procesamiento.php" method="post">
+                <div class="form-group">
+                    <label for="nombre"><strong>Nombre:</strong></label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="correo"><strong>Correo Electrónico:</strong></label>
+                    <input type="email" class="form-control" id="correo" name="correo" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono"><strong>Teléfono:</strong></label>
+                    <input type="tel" class="form-control" id="telefono" name="telefono">
+                </div>
+                <div class="form-group">
+                    <label for="asunto"><strong>Asunto:</strong></label>
+                    <input type="text" class="form-control" id="asunto" name="asunto" required>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="mensaje"><strong>Mensaje:</strong></label>
+                    <textarea class="form-control" id="mensaje" name="mensaje" required></textarea>
+                    
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+
+
+
+            </form>
+
         </section>
+
+
 
 
     </header>
 
 
+
+
     <footer>
         <div class="footer-container">
-            <p>Síguenos en nuestras redes sociales:</p>
-                    
+            <div class="link">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
             <section class="buttons">
                 <a href="https://www.facebook.com/jhon.laurens" class="fa fa-facebook"></a>
                 <a href="https://twitter.com/jhontalaurens" class="fa fa-twitter"></a>
@@ -70,7 +96,6 @@
             </section>
         </div>
     </footer>
-
 
 
 </body>
