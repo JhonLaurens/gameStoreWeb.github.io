@@ -13,7 +13,7 @@
     body {
         font-family: 'Poppins', sans-serif;
         background-color: #1B1726;
-        color: #18031e;
+        color: #c799d4;
     }
 
     .body-servicios {
@@ -34,15 +34,14 @@
         margin: 0 auto;
     }
 
-    .header {
-        background-image: url(images/bg.jpg);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        align-items: center;
-        min-height: 80vh;
-        padding: 80px 0;
+    p {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        color: white; /* Cambia el color del texto a blanco */
+        font-weight: bold; /* Hace que el texto sea negrita */
     }
 
     .header {
@@ -458,18 +457,6 @@
 
     }
 
-    .popular-content {
-        display: flex;
-        /* Muestra las imágenes en una fila */
-        flex-wrap: wrap;
-        /* Permite que las imágenes se envuelvan a la siguiente línea si no caben en el ancho del contenedor */
-        gap: 20px;
-        /* Espaciado entre las imágenes */
-    }
+    
 
-    .popular-content img {
-        max-width: 100%;
-        /* Ajusta el ancho máximo de las imágenes al 100% del contenedor */
-        height: 200px;
-        /* Establece la altura fija de las imágenes en 200px */
-    }
+ 

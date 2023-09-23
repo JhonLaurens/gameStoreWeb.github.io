@@ -13,7 +13,7 @@
     <header class="header">
 
         <div class="menu container">
-            <a href="#" class="logo">
+            <a href="index.html" class="logo">
                 <img src="images/logo.jpg" alt="Logo de la empresa">
             </a>
             <input type="checkbox" id="menu" />
@@ -24,13 +24,13 @@
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="productos.html">Productos</a></li>
+
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
         </div>
 
-        
+
         <div class="header-content container">
             <div class="header-txt">
                 <h1>Compra tu <span>juego</span><br> favorito aquí</h1>
@@ -41,12 +41,21 @@
                     diversión, ¡compra ahora y ahorra mientras te sumerges en emocionantes mundos virtuales!
                 </p>
                 <div class="butons">
-                    <a href="#" class="btn-1">Información</a>
-                    <a href="#" class="btn-1">Juegos</a>
+                    <a href="servicios.html" class="btn-1">Información</a>
+                    <a href="contacto.html" class="btn-1">Contacto</a>
                 </div>
             </div>
         </div>
     </header>
+
+    <section class="cart container">
+        <h2>Carrito de Compras</h2>
+        <ul id="cart-items">
+            <!-- Aquí se mostrarán los productos seleccionados -->
+        </ul>
+        <p>Total: <span id="cart-total">$0</span></p>
+        <button id="checkout-btn" class="btn-2">Pagar</button>
+    </section>
 
     <main class="product container">
 
@@ -154,42 +163,35 @@
         </div>
     </main>
 
-    <section class="cart container">
-        <h2>Carrito de Compras</h2>
-        <ul id="cart-items">
-            <!-- Aquí se mostrarán los productos seleccionados -->
-        </ul>
-        <p>Total: <span id="cart-total">$0</span></p>
-        <button id="checkout-btn" class="btn-2">Pagar</button>
-    </section>
+
 
     <script>
         // Variables para el carrito y el total
         const cart = [];
-        let total = 0;
-    
+        let total = 0 ;
+
         // Función para agregar un producto al carrito
         function addToCart(productName, productPrice) {
-            cart.push({ name: productName, price: productPrice });
-            total += productPrice;
+            cart.push({ name: productName, price: productPrice * 1000 });
+            total += productPrice * 1000;
             updateCartUI();
         }
-    
+
         // Función para actualizar la interfaz de usuario del carrito
         function updateCartUI() {
             const cartItemsElement = document.getElementById("cart-items");
             const cartTotalElement = document.getElementById("cart-total");
             cartItemsElement.innerHTML = "";
-            
+
             cart.forEach(item => {
                 const li = document.createElement("li");
                 li.textContent = `${item.name} - COP $${item.price}`;
                 cartItemsElement.appendChild(li);
             });
-    
+
             cartTotalElement.textContent = `$${total}`;
         }
-    
+
         // Manejo de clic en los botones de compra
         const buyButtons = document.querySelectorAll(".btn-2");
         buyButtons.forEach(button => {
@@ -200,15 +202,15 @@
                 addToCart(productName, productPrice);
             });
         });
-    
-        
+
+
         const checkoutBtn = document.getElementById("checkout-btn");
         checkoutBtn.addEventListener("click", () => {
-            
+
             alert(`Total a pagar: COP $${total}. Redireccionando a la pasarela de pago...`);
         });
     </script>
-    
+
 
 </body>
 
