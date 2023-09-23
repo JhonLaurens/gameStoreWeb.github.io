@@ -1,3 +1,4 @@
+// Variables para el carrito y el total
 const cart = [];
 let total = 0;
 
@@ -21,3 +22,22 @@ function updateCartUI() {
     });
 
     cartTotalElement.textContent = `$${total}`;
+}
+
+// Manejo de clic en los botones de compra
+const buyButtons = document.querySelectorAll(".btn-2");
+buyButtons.forEach(button => {
+    button.addEventListener("click", (event) => {
+        const productElement = event.target.closest(".product-1");
+        const productName = productElement.querySelector("h3").textContent;
+        const productPrice = parseFloat(productElement.querySelector(".price p").textContent.replace("COP $", ""));
+        addToCart(productName, productPrice);
+    });
+});
+
+
+const checkoutBtn = document.getElementById("checkout-btn");
+checkoutBtn.addEventListener("click", () => {
+
+    alert(`Total a pagar: COP $${total}. Redireccionando a la pasarela de pago...`);
+});
