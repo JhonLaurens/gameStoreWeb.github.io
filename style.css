@@ -18,11 +18,11 @@
 
     .body-servicios {
         background-color: #1B1726;
-        /* Cambia el color de fondo según tus preferencias */
+ 
         color: #fff;
-        /* Cambia el color de texto según tus preferencias */
+ 
         font-family: 'Poppins', sans-serif;
-        /* Cambia la fuente según tus preferencias */
+    
     }
 
     img {
@@ -40,8 +40,8 @@
         margin-block-end: 1em;
         margin-inline-start: 0px;
         margin-inline-end: 0px;
-        color: white; /* Cambia el color del texto a blanco */
-        font-weight: bold; /* Hace que el texto sea negrita */
+        color: white; 
+        font-weight: bold; 
     }
 
     .header {
@@ -67,7 +67,7 @@
 
     .logo img {
         max-width: 75px;
-        /* El tamaño se ha reducido a la mitad (originalmente 150px) */
+        
         font-size: 25px;
         font-weight: 800;
         text-transform: uppercase;
@@ -184,25 +184,25 @@
 
     .popular-content img {
         max-width: 100%;
-        /* Las imágenes se redimensionarán automáticamente */
+       
         height: auto;
-        /* Para mantener la proporción de aspecto */
+   
         display: block;
-        /* Elimina el espacio en blanco debajo de las imágenes */
+        
         margin: 0 auto;
-        /* Centra las imágenes en su contenedor */
+      
     }
 
-    /* Estilo para las imágenes en la sección "Todos los juegos" */
+   
     .product-content img {
         max-width: 100%;
-        /* Las imágenes se redimensionarán automáticamente */
+       
         height: auto;
-        /* Para mantener la proporción de aspecto */
+       
         display: block;
-        /* Elimina el espacio en blanco debajo de las imágenes */
+   
         margin: 0 auto;
-        /* Centra las imágenes en su contenedor */
+       
     }
 
     h3 {
@@ -417,7 +417,7 @@
     @media (max-width: 660px) {
         .logo img {
             max-width: 60px;
-            /* Cambiar el tamaño del logotipo a 40px en pantallas más pequeñas */
+            
         }
     }
 
