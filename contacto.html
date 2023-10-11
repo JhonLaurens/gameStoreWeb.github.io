@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styleRedes.css">
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleForm.css">
 </head>
 
 <body>
@@ -33,68 +34,91 @@
             </nav>
         </div>
 
-
-
-        <!-- formulario -->
-        <section class="contact container">
-
-
-            <form action="tu-archivo-de-procesamiento.php" method="post">
-                <div class="form-group">
-                    <label for="nombre"><strong>Nombre:</strong></label>
-                    <input type="text" class="form-control" id="nombre" name="nombre" required>
-                </div>
-                <div class="form-group">
-                    <label for="correo"><strong>Correo Electrónico:</strong></label>
-                    <input type="email" class="form-control" id="correo" name="correo" required>
-                </div>
-                <div class="form-group">
-                    <label for="telefono"><strong>Teléfono:</strong></label>
-                    <input type="tel" class="form-control" id="telefono" name="telefono">
-                </div>
-                <div class="form-group">
-                    <label for="asunto"><strong>Asunto:</strong></label>
-                    <input type="text" class="form-control" id="asunto" name="asunto" required>
-                </div>
-
-
-                <div class="form-group">
-                    <label for="mensaje"><strong>Mensaje:</strong></label>
-                    <textarea class="form-control" id="mensaje" name="mensaje" required></textarea>
-
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-
-
-
-            </form>
-
-        </section>
+        <div class="container" style="text-align: center;">
+            <h2 style="color: #FF5A2C;">COMO LLEGAR</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1179.0455323065678!2d-75.5995161482015!3d6.287291081563343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMTcnMTQuNyJOIDc1wrAzNSc1NC44Ilc!5e0!3m2!1ses-419!2sco!4v1695505823817!5m2!1ses-419!2sco"
+                width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
 
 
 
 
     </header>
 
+    <main>
+        <div class="contact_form">
+            <div class="form-container">
+                <div class="formulario">
+                    <h1 style="color: #FF5A2C;">Formulario de contacto</h1>
+                    <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+
+                    <form action="submeter-formulario.php" method="post">
+                        <div class="form-container">
+                            <div class="form-row">
+                                <label for="nombre" class="colocar_nombre">Nombre
+                                    <span class="obligatorio">*</span>
+                                </label>
+                                <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+                                    placeholder="Escribe tu nombre">
+                            </div>
+
+                            <div class="form-row">
+                                <label for="email" class="colocar_email">Email
+                                    <span class="obligatorio">*</span>
+                                </label>
+                                <input type="email" name "introducir_email" id="email" required="obligatorio"
+                                    placeholder="Escribe tu Email">
+                            </div>
+
+                            <div class="form-row">
+                                <label for="telefone" class="colocar_telefono">Teléfono
+                                </label>
+                                <input type="tel" name="introducir_telefono" id="telefono"
+                                    placeholder="Escribe tu teléfono">
+                            </div>
+
+                            <div class="form-row">
+                                <label for="asunto" class="colocar_asunto">Asunto
+                                    <span class="obligatorio">*</span>
+                                </label>
+                                <input type="text" name="introducir_asunto" id="assunto" required="obligatorio"
+                                    placeholder="Escribe un asunto">
+                            </div>
+
+                            <div class="form-row">
+                                <label for="mensaje" class="colocar_mensaje">Mensaje
+                                    <span class="obligatorio">*</span>
+                                </label>
+                                <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje"
+                                    required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
+                            </div>
+
+                            <div class="button-container">
+                                <button type="submit" name="enviar_formulario" id="enviar">Enviar</button>
+                                <p class="aviso">
+                                    <span class="obligatorio"> * </span>Los campos son obligatorios.
+                                </p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
 
 
 
     <footer>
-
-
-
-
-        <div class="container border p-4 my-4">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1179.0455323065678!2d-75.5995161482015!3d6.287291081563343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMTcnMTQuNyJOIDc1wrAzNSc1NC44Ilc!5e0!3m2!1ses-419!2sco!4v1695505823817!5m2!1ses-419!2sco"
-                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </div>
-
         <div class="container border p-4 my-4">
             <div class="row">
                 <div class="col-md-6">
                     <h3>Contacto</h3>
+
                     <ul>
                         <li><strong>Dirección:</strong> 123 Calle Principal, Ciudad, País</li>
                         <li><strong>Teléfono:</strong> +57 301 703 39 18</li>
@@ -111,6 +135,15 @@
                 </div>
             </div>
         </div>
+
+
+        <div class="copyright">
+            &copy; 2023 GameStore. Todos los derechos reservados.
+            <a href="https://github.com/JhonLaurens"
+                style="color: #84419a; text-decoration: none;">github.com/JhonLaurens</a>
+        </div>
+
+
     </footer>
 
 
