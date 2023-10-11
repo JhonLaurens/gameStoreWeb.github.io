@@ -1,15 +1,10 @@
 /* Estilo del contenedor */
 .form-container {
   background-color: #68047c;
-  /* Color de fondo oscuro */
   padding: 20px;
-  /* Espacio interior del contenedor */
   border-radius: 10px;
-  /* Bordes redondeados para el contenedor */
   margin: 0 auto;
-  /* Centra el contenedor horizontalmente */
   max-width: 400px;
-  /* Ancho máximo del contenedor */
 }
 
 /* Estilo del formulario */
@@ -19,20 +14,18 @@
   align-items: center;
   text-align: center;
   padding: 1px;
-  /* Puedes ajustar más estilos según tus preferencias */
 }
 
 /* Estilos para el formulario y su contenido */
 .formulario {
   color: #fff;
-  /* Color del texto dentro del formulario */
-  /* Otros estilos de tu formulario */
+  
 }
 
 .button-container {
   text-align: center;
   margin-top: 20px;
-  /* Ajusta la distancia entre el botón y el mensaje */
+  
 }
 
 .aviso {
@@ -97,15 +90,12 @@
 .button-container {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
-  /* Ajusta el margen superior según tus necesidades */
+  margin-top: 20px;  
 }
 
 button#enviar {
-  background-color: #FF5A2C;
-  /* Color de fondo */
-  color: #fff;
-  /* Color del texto */
+  background-color: #FF5A2C;  
+  color: #fff; 
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
@@ -114,6 +104,5 @@ button#enviar {
 }
 
 button#enviar:hover {
-  background-color: #FF7046;
-  /* Color de fondo al pasar el cursor */
+  background-color: #FF7046;  
 }
