@@ -18,11 +18,11 @@
 
     .body-servicios {
         background-color: #1B1726;
- 
+
         color: #fff;
- 
+
         font-family: 'Poppins', sans-serif;
-    
+
     }
 
     .link-no-underline {
@@ -44,11 +44,11 @@
         margin-block-end: 1em;
         margin-inline-start: 0px;
         margin-inline-end: 0px;
-        color: white; 
-        font-weight: bold; 
+        color: white;
+        font-weight: bold;
     }
 
-    
+
 
     .header {
         background-image: url(images/bg.jpg);
@@ -59,7 +59,7 @@
         align-items: center;
         min-height: 80vh;
         padding: 80px 0;
-        
+
     }
 
     .menu {
@@ -74,7 +74,7 @@
 
     .logo img {
         max-width: 75px;
-        
+
         font-size: 25px;
         font-weight: 800;
         text-transform: uppercase;
@@ -91,7 +91,7 @@
         color: #FFFFFF;
         font-weight: 600;
         display: block;
-        text-decoration: none; 
+        text-decoration: none;
     }
 
     .menu .navbar ul li a:hover {
@@ -150,7 +150,7 @@
         margin-right: 25px;
         font-size: 17px;
         color: #FFFFFF;
-        text-decoration: none; 
+        text-decoration: none;
         background-color: rgba(255, 90, 44, 0.3);
     }
 
@@ -185,6 +185,8 @@
     }
 
     .product-1 {
+        max-width: 660px;
+        margin: 0 auto;
         background-color: #2A223A;
     }
 
@@ -194,26 +196,28 @@
 
     .popular-content img {
         max-width: 100%;
-       
+
         height: auto;
-   
+
         display: block;
-        
+
         margin: 0 auto;
-      
+
     }
 
-   
+
     .product-content img {
         max-width: 100%;
-       
+
         height: auto;
-       
+
         display: block;
-   
+
         margin: 0 auto;
-       
+
     }
+
+
 
     h3 {
         font-size: 20px;
@@ -275,11 +279,13 @@
         background-color: #FF5A2C;
         cursor: pointer;
         margin-right: 0;
-        transition: background-color 0.3s; /* Agregamos una transición para suavizar el cambio de color */
+        transition: background-color 0.3s;
+        /* Agregamos una transición para suavizar el cambio de color */
     }
 
     .btn-3:hover {
-        background-color: #E63A00; /* Cambia el color al pasar el mouse */
+        background-color: #E63A00;
+        /* Cambia el color al pasar el mouse */
     }
 
     .footer {
@@ -297,7 +303,7 @@
         font-size: 17px;
         color: #FFFFFF;
         margin-right: 20px;
-        text-decoration: none; 
+        text-decoration: none;
     }
 
     .link ul li>a:hover {
@@ -374,6 +380,9 @@
 
         .product-1 img {
             width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
         }
 
         .contact {
@@ -433,7 +442,7 @@
     @media (max-width: 660px) {
         .logo img {
             max-width: 60px;
-            
+
         }
     }
 
@@ -474,20 +483,14 @@
     }
 
     .copyright {
-        
+
         text-align: center;
         padding: 3px;
-        color: #c799d4; /* Cambia el color del texto */
+        color: #c799d4;
+        /* Cambia el color del texto */
     }
-    
+
     .copyright a {
         color: #84419a;
         text-decoration: none;
     }
-
-  
-   
-
-    
-
- 
