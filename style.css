@@ -188,6 +188,7 @@
         max-width: 660px;
         margin: 0 auto;
         background-color: #2A223A;
+        border-radius: 5px;
     }
 
     .product-txt {
