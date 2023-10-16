@@ -374,7 +374,7 @@
         }
 
         .product-content {
-            grid-template-columns: repeat(1, 1);
+            grid-template-columns: repeat(1, 2fr);
             gap: 30px;
         }
 
@@ -384,6 +384,8 @@
             display: block;
             margin: 0 auto;
         }
+
+        
 
         .contact {
             padding: 30px;
