@@ -1,78 +1,54 @@
-.buttons {
-    min-width: 700px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.buttons a {
-    text-decoration: none;
-    font-size: 28px;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
+.social-buttons {
+    
     text-align: center;
-    background: #314652;
-    color: #f1f1f1;
-    border-radius: 50%;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    transition: all 0.4s ease-in-out;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.buttons a:hover {
-    transform: scale(1.2);
-}
-
-/* Estilos para el pie de página */
-footer {
-    background-color: #333;
+  }
+  
+  .social-buttons a {
+    display: block;
+    margin-bottom: 10px;
     color: white;
-    padding: 20px 0;
-    text-align: center;
-}
+    font-size: 24px;
+  }
+  
+  .social-buttons a:hover {
+    color: #1DA1F2;
+  }
 
-/* Estilos para el contenedor del pie de página */
-.footer-container {
+  footer {
+    background-color: #2A223A;
+    padding: 30px 0;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  footer .container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-}
+  }
 
-/* Estilos para la lista de menú en el pie de página */
-.link ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.link li {
+  footer .social-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  footer .social-buttons a {
     display: inline-block;
     margin: 0 10px;
-}
-
-.link a {
-    text-decoration: none;
-    color: white;
-}
-
-/* Estilos para los botones de redes sociales en el pie de página */
-.buttons a {
-    text-decoration: none;
+    color: #6c757d;
     font-size: 24px;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    background: #314652;
-    color: #f1f1f1;
-    border-radius: 50%;
-    margin: 10px;
-    transition: all 0.4s ease-in-out;
-}
+  }
 
-.buttons a:hover {
-    transform: scale(1.2);
-}
+  footer .social-buttons a:hover {
+    color: #1DA1F2;
+  }
+
+  footer .copyright {
+    text-align: center;
+    margin-top: 20px;
+    color: #6c757d;
+    font-size: 14px;
+  }
+  
+ 

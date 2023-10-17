@@ -1,26 +1,45 @@
-/* Estilo del contenedor */
+
 .form-container {
+  height: auto;
+  width: auto;
   background-color: #2A223A;
-  padding: 20px;
-  
+  padding: 30px 30px 30px;
   margin: 0 auto;
-  max-width: 400px;
+  max-width: 600px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px #ccc;
 }
+
+main {
+  
+  margin: auto;
+  margin-top: 60px;
+  max-width: 600px;
+  border-radius: 10px;
+  
+    
+}
+  
 
 /* Estilo del formulario */
-.formulario {
+.formulario { 
+  /*ajustar altura no muy sepado del borde superior ajustar espacio arriba y abajo */
+  
+  padding: 10px;
+  margin: 0 auto;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  text-align: center;
-  padding: 1px;
+  background-color: #2A223A;
+  
+  
+   
 }
 
-/* Estilos para el formulario y su contenido */
-.formulario {
-  color: #fff;
-  
-}
+
 
 .button-container {
   text-align: center;
@@ -34,9 +53,8 @@
 
 
 
-.form-container {
-  width: 100%;
-}
+
+  
 
 .form-row {
   display: flex;
@@ -49,11 +67,20 @@
   font-weight: bold;
 }
 
-.form-row input,
+.form-row input {
+  /*modificar color de deja aqui tu comentario*/
+  
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #272525;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
 .form-row textarea {
   width: 100%;
   padding: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid #b90e0e;
   border-radius: 5px;
   font-size: 16px;
 }
@@ -106,3 +133,4 @@ button#enviar {
 button#enviar:hover {
   background-color: #FF7046;  
 }
+

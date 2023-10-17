@@ -60,3 +60,5 @@ clearCartBtn.addEventListener("click", () => {
         clearCart();
     }
 });
+
+
