@@ -188,12 +188,14 @@
     }
 
     .product-content {
+        
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 50px;
         border-radius: 20px;
         border: 1px solid #ccc;
         box-shadow: 0 0 10px #ccc;
+        padding: 50px;
     }
 
     .product-1 {
@@ -391,12 +393,15 @@
         }
 
         .product {
-            padding: 30px;
+            padding: 100px;
+            
         }
 
         .product-content {
+            /*ampliar margen*/
             grid-template-columns: repeat(1, 2fr);
             gap: 30px;
+            
         }
 
         .product-1 img {
@@ -405,6 +410,7 @@
             display: block;
             margin: 0 auto;
         }
+        
 
 
 
@@ -543,21 +549,21 @@
 
     .services .button-accordion-button {
         background-color: #FF5A2C;
-        /* change the background color */
+        
         color: #fff;
-        /* change the text color */
+      
         border: 1px solid #84419a;
-        /* change the border style */
+      
         border-radius: 10px;
-        /* change the border radius */
+    
         padding: 10px 20px;
-        /* change the padding */
+  
         margin-bottom: 10px;
-        /* change the margin */
+   
         font-size: 18px;
-        /* change the font size */
+     
         text-align: center;
-        /* change the text alignment */
+  
     }
 
     .services .button-accordion-button:hover {
