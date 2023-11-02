@@ -24,7 +24,7 @@
             <nav class="navbar">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
-
+                    <li><a href="servicios.html">Servicios</a></li>
                     <li><a href="productos.html">Productos</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
@@ -32,34 +32,125 @@
         </div>
 
         <section class="services container">
-            <h2>Servicios</h2>
+            <h2 style="background-color: #FF5A2C; text-align: center;border-radius: 25px;"><strong>SERVICIOS</strong>
+            </h2>
+
+
 
             <div class="accordion" id="servicesAccordion">
 
 
-                <div class="accordion-item">
+                <div class="accordion-item" style="background-color: #2A223A;">
                     <h2 class="accordion-header">
+
+
                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTrucos" aria-expanded="true" aria-controls="collapseTrucos">
-                            Trucos
+                            data-bs-target="#collapseImagenes" aria-expanded="false" aria-controls="collapseImagenes">
+                            Imagenes
                         </button>
                     </h2>
-                    <div id="collapseTrucos" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
+                    <div id="collapseImagenes" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
                         <div class="accordion-body">
-                            <ul>
-                                <li>Trucos para juegos de acción.</li>
-                                <li>Trucos para juegos de aventuras.</li>
-                                <li>Trucos para juegos de estrategia.</li>
-                                <li>Trucos para juegos de rol.</li>
-                                <li>Trucos para mejorar tus habilidades en juegos.</li>
-                            </ul>
+                            <div class="gallery-container">
+                                <img src="images/g1.jpg" alt="Gallery Image 1" class="active">
+                                <img src="images/g2.jpg" alt="Gallery Image 2" class="active">
+                                <img src="images/g3.jpg" alt="Gallery Image 3" class="active">
+                                <img src="images/g4.jpg" alt="Gallery Image 4" class="active">
+                                <img src="images/g5.jpg" alt="Gallery Image 5" class="active">
+                                <img src="images/g6.jpg" alt="Gallery Image 6" class="active">
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseVideos" aria-expanded="false" aria-controls="collapseVideos">
+                        Videos
+                    </button>
+                    </h2>
+                    <div id="collapseVideos" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
+                        <div class="accordion" id="accordionExample">
+
+                            <div class="accordion-item" style="background-color: #2A223A;">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        The Last of Us Part II
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Trailer</p>
+
+                                        <div class="video-container">
+                                            <iframe width="560" height="315"
+                                                src="https://www.youtube.com/embed/46ohP30YA_Y?si=RYKC9Acc-xrPpiMo"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="accordion-item" style="background-color: #2A223A;">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Ghost of Tsushima
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Trailer</p>
+
+                                        <div class="video-container">
+                                            <iframe width="560" height="315"
+                                                src="https://www.youtube.com/embed/jT9edKarhc8?si=FXAceDOS_yjPXP-I"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="accordion-item" style="background-color: #2A223A;">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        red dead redemption 2
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Trailer</p>
+
+                                        <div class="video-container">
+                                            <iframe width="560" height="315"
+                                                src="https://www.youtube.com/embed/MyaYlbizpvs?si=RRfkojIQeEVHU_Af"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
                         </div>
                     </div>
                 </div>
 
+
+
+
                 <!-- Servicio 2 - Tutoriales -->
-                <div class="accordion-item">
+                <div class="accordion-item" style="background-color: #2A223A;">
                     <h2 class="accordion-header">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseTutoriales" aria-expanded="false"
@@ -188,92 +279,29 @@
                     </div>
                 </div>
 
-
-                <div class="accordion-item">
+                <div class="accordion-item" style="background-color: #2A223A;">
                     <h2 class="accordion-header">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseVideos" aria-expanded="false" aria-controls="collapseVideos">
-                            Videos
+                            data-bs-target="#collapseTrucos" aria-expanded="true" aria-controls="collapseTrucos">
+                            Trucos
                         </button>
                     </h2>
-                    <div id="collapseVideos" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
-                        <div class="accordion" id="accordionExample">
-
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        The Last of Us Part II
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <p>Trailer</p>
-
-                                        <div class="video-container">
-                                            <iframe width="560" height="315"
-                                                src="https://www.youtube.com/embed/46ohP30YA_Y?si=RYKC9Acc-xrPpiMo"
-                                                title="YouTube video player" frameborder="0"
-                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                allowfullscreen></iframe>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Ghost of Tsushima
-                                    </button>
-                                </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <p>Trailer</p>
-
-                                        <div class="video-container">
-                                            <iframe width="560" height="315"
-                                                src="https://www.youtube.com/embed/jT9edKarhc8?si=FXAceDOS_yjPXP-I"
-                                                title="YouTube video player" frameborder="0"
-                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                allowfullscreen></iframe>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree">
-                                        red dead redemption 2
-                                    </button>
-                                </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse"
-                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <p>Trailer</p>
-
-                                        <div class="video-container">
-                                            <iframe width="560" height="315"
-                                                src="https://www.youtube.com/embed/MyaYlbizpvs?si=RRfkojIQeEVHU_Af"
-                                                title="YouTube video player" frameborder="0"
-                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                allowfullscreen></iframe>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    <div id="collapseTrucos" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
+                        <div class="accordion-body">
+                            <ul style="color: #fff;">
+                                <li>Trucos para juegos de acción.</li>
+                                <li>Trucos para juegos de aventuras.</li>
+                                <li>Trucos para juegos de estrategia.</li>
+                                <li>Trucos para juegos de rol.</li>
+                                <li>Trucos para mejorar tus habilidades en juegos.</li>
+                            </ul>
 
                         </div>
                     </div>
                 </div>
+
+
+
         </section>
 
     </header>
@@ -286,7 +314,7 @@
                 <img src="images/logo.jpg" alt="Logo de la empresa">
             </a>
         </div>
-    
+
         <div class="link" style="display: block;">
             <ul>
                 <li><a href="servicios.html">Servicios</a></li>
@@ -294,15 +322,16 @@
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </div>
-       
+
         <div class="copyright">
-            &copy; 2023 GameStore. Todos los derechos reservados. 
-            <a href="https://github.com/JhonLaurens" style="color: #84419a; text-decoration: none;">github.com/JhonLaurens</a>
+            &copy; 2023 GameStore. Todos los derechos reservados.
+            <a href="https://github.com/JhonLaurens"
+                style="color: #84419a; text-decoration: none;">github.com/JhonLaurens</a>
         </div>
-        
-        
+
+
     </footer>
-        
+
 
     </footer>
 

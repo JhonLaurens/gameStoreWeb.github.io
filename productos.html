@@ -22,9 +22,10 @@
             </label>
             <nav class="navbar">
                 <ul>
+
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="servicios.html">Servicios</a></li>
-
+                    <li><a href="productos.html">Productos</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
@@ -35,30 +36,109 @@
             <div class="header-txt">
                 <h1>Compra tu <span>juego</span><br> favorito aquí</h1>
                 <p>
-                    ¡Oferta especial en juegos en línea! Descuentos y promociones 
-                    exclusivas. Compra tus juegos favoritos a precios bajos. 
-                    Sumérgete en emocionantes mundos virtuales y ahorra. 
+                    ¡Oferta especial en juegos en línea! Descuentos y promociones
+                    exclusivas. Compra tus juegos favoritos a precios bajos.
+                    Sumérgete en emocionantes mundos virtuales y ahorra.
                     ¡No te quedes fuera de la diversión!
                 </p>
-                <div class="butons">
+                <div class="buttons">
+                    <a><button id="show-btn" class="btn-1">Carrito</button></a>
                     <a href="servicios.html" class="btn-1">Información</a>
                     <a href="contacto.html" class="btn-1">Contacto</a>
                 </div>
+
+                <style>
+                    .buttons {
+                        display: flex;
+                        justify-content: space-around;
+                        margin: 10px 0;
+                    }
+
+                    .btn-1 {
+                        margin-left: 10px;
+                    }
+                </style>
             </div>
         </div>
     </header>
 
-    <section class="cart container">
-        <h2>Carrito de Compras</h2>
-        <ul id="cart-items"></ul>
-        <p>Total: <span id="cart-total">$0</span></p>
-        <button id="checkout-btn" class="btn-2">Pagar</button>
-        <button id="clear-cart-btn" class="btn-2">Limpiar Carrito</button>
-    </section>
+    <style>
+        .btn-2:hover {
+            /*cambiar de color a botones usar paleta de colores */
+            background-color: #E63A00;
+            color: white;
+            transition: 0.3s ease all;
+        }
+    </style>
+
+
+
+    <div class="cart-container" id="drag-container">
+        <button id="hide-btn" class="btn-2">Ocultar</button>
+
+        <section class="cart container img-fluid w-75 mt-5 mb-5">
+            <h2 style="color: #FF5A2C;">Carrito de Compras</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: <span id="cart-total">$0</span></p>
+            <button id="checkout-btn" class="btn-2">Pagar</button>
+            <button id="clear-cart-btn" class="btn-2">Limpiar Carrito</button>
+        </section>
+    </div>
+
+    <script>
+        let offsetX, offsetY;
+
+        // Bandera para indicar si el usuario está arrastrando
+        let isDragging = false;
+
+        // Elemento contenedor que se va a arrastrar
+        const dragContainer = document.getElementById('drag-container');
+
+        // Botón para ocultar el contenedor
+        const hideBtn = document.getElementById('hide-btn');
+
+        // Botón para mostrar el contenedor
+        const showBtn = document.getElementById('show-btn');
+
+        // Evento de inicio de arrastre
+        dragContainer.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            offsetX = e.clientX - dragContainer.getBoundingClientRect().left;
+            offsetY = e.clientY - dragContainer.getBoundingClientRect().top;
+        });
+
+        // Evento de finalización de arrastre
+        document.addEventListener('mouseup', () => {
+            isDragging = false;
+        });
+
+        // Evento de arrastre continuo
+        document.addEventListener('mousemove', (e) => {
+            if (isDragging) {
+                const newX = e.clientX - offsetX;
+                const newY = e.clientY - offsetY;
+                dragContainer.style.left = newX + 'px';
+                dragContainer.style.top = newY + 'px';
+            }
+        });
+
+        // Evento de clic en el botón "Ocultar"
+        hideBtn.addEventListener('click', () => {
+            dragContainer.style.display = 'none';
+            showBtn.style.display = 'block';
+        });
+
+        // Evento de clic en el botón "Mostrar"
+        showBtn.addEventListener('click', () => {
+            dragContainer.style.display = 'block';
+            showBtn.style.display = 'none';
+        });
+    </script>
 
     <main class="product container">
 
-        <h2>Todos los juegos</h2>
+        <h2 style="background-color: #FF5A2C; text-align: center;border-radius: 25px;"><STrong>TODOS LOS JUEGOS</STrong>
+        </h2>
 
         <div class="product-content">
             <div class="product-1">

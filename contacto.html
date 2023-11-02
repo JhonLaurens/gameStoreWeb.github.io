@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="styleRedes.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styleForm.css">
@@ -29,17 +29,18 @@
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="servicios.html">Servicios</a></li>
                     <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
 
                 </ul>
             </nav>
         </div>
 
         <div class="container" style="text-align: center;">
-            <h2 style="color: #FF5A2C;">COMO LLEGAR</h2>
+            <h2 class="como-llegar">COMO LLEGAR</h2>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1179.0455323065678!2d-75.5995161482015!3d6.287291081563343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMTcnMTQuNyJOIDc1wrAzNSc1NC44Ilc!5e0!3m2!1ses-419!2sco!4v1695505823817!5m2!1ses-419!2sco"
-                width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
+                width="800" height="450" style="border: 10px solid #FF5A2C; border-radius: 20px;" allowfullscreen=""
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         </div>
 
@@ -49,8 +50,8 @@
     </header>
 
     <main>
-        <div class="contact_form">
-            <div class="form-container">
+        <div class="contact_form ">
+            <div class="form-container  ">
                 <div class="formulario">
                     <h1 style="color: #FF5A2C;">Formulario de contacto</h1>
                     <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
@@ -69,7 +70,7 @@
                                 <label for="email" class="colocar_email">Email
                                     <span class="obligatorio">*</span>
                                 </label>
-                                <input type="email" name "introducir_email" id="email" required="obligatorio"
+                                <input type="email" name="introducir_email" id="email" required="obligatorio"
                                     placeholder="Escribe tu Email">
                             </div>
 
@@ -125,13 +126,11 @@
                         <li><strong>Correo Electrónico:</strong> jhonlaurens@gmail.com</li>
                     </ul>
                 </div>
-                <div class="col-md-6">
-                    <h3>Síguenos en las redes sociales</h3>
-                    <section class="buttons">
-                        <a href="https://www.facebook.com/jhon.laurens" class="fa fa-facebook"></a>
-                        <a href="https://twitter.com/jhontalaurens" class="fa fa-twitter"></a>
-                        <a href="https://www.youtube.com/channel/UCuMvx7UhL2YFa-JHvZTMNFw" class="fa fa-youtube"></a>
-                    </section>
+                <div class="social-buttons">
+                    <a href="https://www.facebook.com/jhon.laurens/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/jhontalaurens" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/channel/UCuMvx7UhL2YFa-JHvZTMNFw" target="_blank"><i
+                            class="fab fa-youtube"></i></a>
                 </div>
             </div>
         </div>
@@ -147,6 +146,7 @@
     </footer>
 
 
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
