@@ -311,12 +311,11 @@
     .link ul li>a:hover {
         color: #FF5A2C;
     }
-
-    .h2.como-llegar {
+       
+    .como-llegar {
         color: #FF5A2C;
         font-size: 35px;
         margin-bottom: 45px;
-        
     }
 
     @media(max-width:991px) {
@@ -387,6 +386,7 @@
             /*ampliar margen*/
             grid-template-columns: repeat(1, 2fr);
             gap: 30px;
+            
 
         }
 
@@ -395,6 +395,8 @@
             height: auto;
             display: block;
             margin: 0 auto;
+            
+            
         }
 
 
