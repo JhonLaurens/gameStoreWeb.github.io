@@ -63,8 +63,6 @@
 
     }
 
-
-
     .menu {
         position: absolute;
         top: 0;
@@ -177,18 +175,14 @@
         display: flex;
         justify-content: space-between;
 
-
-
     }
 
     .popular-content img {
         width: 150px;
-
-
     }
 
     .product-content {
-        
+
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 50px;
@@ -211,33 +205,18 @@
 
     .popular-content img {
         max-width: 100%;
-
         height: auto;
-
         display: block;
-
         margin: 0 auto;
-
-
-
-
-
-
     }
 
 
     .product-content img {
         max-width: 100%;
-
         height: auto;
-
         display: block;
-
         margin: 0 auto;
-
-
     }
-
 
 
     h3 {
@@ -333,6 +312,13 @@
         color: #FF5A2C;
     }
 
+    .h2.como-llegar {
+        color: #FF5A2C;
+        font-size: 35px;
+        margin-bottom: 45px;
+        
+    }
+
     @media(max-width:991px) {
         .menu {
             padding: 20px;
@@ -394,14 +380,14 @@
 
         .product {
             padding: 100px;
-            
+
         }
 
         .product-content {
             /*ampliar margen*/
             grid-template-columns: repeat(1, 2fr);
             gap: 30px;
-            
+
         }
 
         .product-1 img {
@@ -410,7 +396,7 @@
             display: block;
             margin: 0 auto;
         }
-        
+
 
 
 
@@ -549,21 +535,21 @@
 
     .services .button-accordion-button {
         background-color: #FF5A2C;
-        
+
         color: #fff;
-      
+
         border: 1px solid #84419a;
-      
+
         border-radius: 10px;
-    
+
         padding: 10px 20px;
-  
+
         margin-bottom: 10px;
-   
+
         font-size: 18px;
-     
+
         text-align: center;
-  
+
     }
 
     .services .button-accordion-button:hover {
@@ -663,7 +649,7 @@
     }
 
     .clock-container {
-        
+
         border-radius: 5px;
         padding: 20px;
         text-align: center;
@@ -683,9 +669,7 @@
 
     @media (max-width: 768px) and (min-width: 500px) {
         .clock-container iframe {
-          max-width: 100%;
-          height: 100px;
+            max-width: 100%;
+            height: 100px;
         }
-      }
-
-  
+    }
