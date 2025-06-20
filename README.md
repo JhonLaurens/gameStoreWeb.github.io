@@ -1,12 +1,26 @@
-# GameStoreWeb 🎮
+# 🎮 GameStore - Tienda de Videojuegos Online
 
-## Descripción General 📜
+**👉 Ver el proyecto en vivo:** **[https://jhonlaurens.github.io/gameStoreWeb.github.io/](https://jhonlaurens.github.io/gameStoreWeb.github.io/)**
+
+---
+
+## 📜 Descripción General
 
 GameStoreWeb es un proyecto de tienda en línea frontend para la venta de videojuegos. Permite a los usuarios navegar por un catálogo de juegos, ver detalles de los productos, agregarlos a un carrito de compras y simular un proceso de pago. El sitio también incluye páginas informativas sobre servicios (trucos, tutoriales, videos) y una página de contacto.
 
 Este repositorio contiene todo el código fuente (HTML, CSS, JavaScript) y los assets (imágenes) necesarios para desplegar y ejecutar la tienda web.
 
-## Características Principales ✨
+---
+
+### ✨ Vista Previa
+
+*(Te recomiendo subir una captura de pantalla de tu sitio a la carpeta `images` y reemplazar el enlace de abajo. Ejemplo: `images/preview.png`)*
+
+![Vista previa del sitio GameStore](URL_DE_LA_IMAGEN_AQUI)
+
+---
+
+## 🚀 Características Principales
 
 *   **Catálogo de Productos:** Visualización de juegos con imágenes, nombres y precios en la página principal y en la sección de productos.
 *   **Carrito de Compras:**
@@ -15,21 +29,25 @@ Este repositorio contiene todo el código fuente (HTML, CSS, JavaScript) y los a
     *   Limpiar el carrito.
     *   Simulación de proceso de pago.
 *   **Páginas Informativas:**
-    *   **Servicios:** Sección con información sobre trucos de juegos, tutoriales (listado de juegos con plataforma y año) y videos (trailers de juegos embebidos).
-    *   **Contacto:** Formulario de contacto, mapa de ubicación (Google Maps) e información de contacto.
-*   **Diseño Responsivo:** Interfaz adaptable gracias al uso de Bootstrap.
-*   **Navegación Intuitiva:** Menú de navegación claro para acceder a las diferentes secciones del sitio.
+    *   **Servicios:** Sección con información sobre trucos, tutoriales y videos de juegos.
+    *   **Contacto:** Formulario de contacto, mapa de ubicación y datos de contacto.
+*   **Diseño Responsivo:** Interfaz adaptable a múltiples dispositivos gracias a Bootstrap.
+*   **Navegación Intuitiva:** Menú claro para acceder a todas las secciones del sitio.
 
-## Tecnologías Utilizadas 💻
+---
 
-*   **HTML5:** Para la estructura y el contenido de las páginas web.
-*   **CSS3:** Para los estilos y la presentación visual (incluyendo archivos dedicados como `style.css`, `styleForm.css`, `styleRedes.css`).
-*   **JavaScript (ES6+):** Para la funcionalidad interactiva, principalmente el manejo del carrito de compras en `Api.js`.
-*   **Bootstrap 5:** Framework CSS para el diseño responsivo y componentes predefinidos.
+## 💻 Tecnologías Utilizadas
 
-## Estructura del Proyecto 📁
+Este proyecto fue construido utilizando las siguientes tecnologías:
 
-El proyecto se organiza de la siguiente manera:
+- ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+- ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+- ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+- ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+
+---
+
+## 📁 Estructura del Proyecto
 
 ```
 .
@@ -39,11 +57,6 @@ El proyecto se organiza de la siguiente manera:
 ├── README.md ................... Este archivo
 ├── contacto.html ............... Página de contacto
 ├── images/ ..................... Carpeta con todas las imágenes del sitio
-│   ├── bg.jpg
-│   ├── g1.jpg - g7.jpg ......... Imágenes para el carrusel de juegos populares
-│   ├── l1.jpg - l9.jpg ......... Imágenes de los productos (juegos)
-│   ├── logo.jpg ................ Logo de la tienda
-│   └── menu.png ................ Icono del menú móvil
 ├── index.html .................. Página principal de la tienda
 ├── productos.html .............. Página de listado de productos y carrito
 ├── servicios.html .............. Página de servicios (trucos, tutoriales, videos)
@@ -52,7 +65,9 @@ El proyecto se organiza de la siguiente manera:
 └── styleRedes.css .............. Estilos para los iconos de redes sociales
 ```
 
-## Cómo Empezar 🚀
+---
+
+## 🚀 Cómo Empezar
 
 Para ejecutar este proyecto localmente, sigue estos pasos:
 
@@ -65,18 +80,21 @@ Para ejecutar este proyecto localmente, sigue estos pasos:
     cd gameStoreWeb.github.io
     ```
 3.  **Abre el archivo `index.html` en tu navegador web preferido.**
-    No se requieren pasos de compilación ni instalación de dependencias adicionales para la funcionalidad principal, ya que es un proyecto frontend puro.
+    No se requieren pasos de compilación ni dependencias adicionales.
 
-## Uso 🖱️
+---
 
-*   Navega por las diferentes secciones utilizando el menú principal: Inicio, Servicios, Productos, Contacto.
-*   En la página de "Productos", puedes hacer clic en el botón "Comprar" de cualquier juego para agregarlo al carrito.
-*   El carrito de compras se actualizará mostrando los productos agregados y el total.
-*   Puedes limpiar el carrito o simular un pago usando los botones correspondientes en la sección del carrito.
-*   Explora la sección de "Servicios" para ver trucos, tutoriales y videos de juegos.
-*   Utiliza el formulario en la página de "Contacto" para enviar mensajes (requiere configuración de backend para la recepción real de mensajes, ya que `submeter-formulario.php` no está incluido).
+## 🖱️ Uso
 
-## Contribuciones 🤝
+*   Navega por las diferentes secciones utilizando el menú principal: **Inicio, Servicios, Productos, Contacto**.
+*   En la página de **Productos**, haz clic en **"Comprar"** para agregar juegos al carrito.
+*   El carrito se actualizará mostrando los productos agregados y el total.
+*   Explora la sección de **Servicios** para ver trucos, tutoriales y videos.
+*   Utiliza el formulario en la página de **Contacto** para enviar mensajes (la funcionalidad de envío real requeriría un backend).
+
+---
+
+## 🤝 Contribuciones
 
 Las contribuciones son bienvenidas. Si deseas mejorar este proyecto:
 
@@ -86,7 +104,8 @@ Las contribuciones son bienvenidas. Si deseas mejorar este proyecto:
 4.  Haz Push a la rama (`git push origin feature/nueva-funcionalidad`).
 5.  Abre un Pull Request.
 
-## Licencia 📄
+---
 
-Este proyecto no especifica una licencia. Se recomienda añadir un archivo `LICENSE` si se desea definir los términos bajo los cuales otros pueden usar, modificar y distribuir el código.
+## 📄 Licencia
 
+Este proyecto no especifica una licencia. Se recomienda añadir un archivo `LICENSE` para definir los términos de uso.
